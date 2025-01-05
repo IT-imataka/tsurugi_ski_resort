@@ -15,7 +15,7 @@ toggle.forEach((event) =>
     if (event.classList.contains("active")) {
       window.location.href = "/portfolio/green.html";
     } else {
-      window.location.pathname = `${loc}`;
+      window.location.href = `${loc}`;
     }
   })
 );
