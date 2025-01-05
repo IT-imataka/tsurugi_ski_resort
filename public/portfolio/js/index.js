@@ -13,13 +13,11 @@ toggle.forEach((event) =>
     const loc = document.location.pathname;
     console.log(loc);
     event.classList.toggle("active");
-    currentpage = 1;
-    if (currentpage === 1) {
+    if (currentpage === 0) {
       window.location.href = "/portfolio/green.html";
-      currentpage = 0;
-    } else {
-      // window.location.pathname = `${loc}`;
       currentpage = 1;
+    } else {
+      window.location.pathname = `${loc}`;
     }
   })
 );
