@@ -7,7 +7,7 @@
 const toggle = document.querySelectorAll(".toggle");
 const label = document.getElementById("label");
 const loc = document.location.pathname;
-console.log(loc);
+// console.log(loc);
 let currentpage = 0;
 
 toggle.forEach((event) =>
@@ -18,7 +18,7 @@ toggle.forEach((event) =>
       window.location.href = "/portfolio/green.html";
       currentpage = 0;
     } else {
-      // window.location.;
+      window.location.pathname = `${loc}`;
       currentpage = 1;
     }
   })
