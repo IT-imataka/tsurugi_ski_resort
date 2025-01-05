@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .hero {
+  background: url("hero.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+header .hero h1 {
+  font-size: 3em;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+}
+section.green {
+  display: none;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.pickup-items,
+.feature-items,
+.info-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.pickup-item,
+.feature-item,
+.info-item {
+  background: #f0f0f0;
+  margin: 10px;
+  padding: 20px;
+  flex: 1 1 200px;
+  text-align: center;
+}
+
+.news ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.news ul li {
+  background: #e0e0e0;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p,
+footer address {
+  margin: 5px 0;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+}
