@@ -7,15 +7,24 @@
 const toggle = document.querySelectorAll(".toggle");
 const label = document.getElementById("label");
 const loc = document.location.pathname;
-console.log(loc);
+const activelabel = document.getElementById("label");
+const activetoggle = document.getElementById("activetoggle");
+// console.log(loc);
 
 toggle.forEach((element) =>
   label.addEventListener("click", () => {
     element.classList.toggle("active");
     if (element.classList.contains("active")) {
       window.location.href = "/portfolio/green.html";
-    } else {
-      window.location.href = `${loc}`;
+    }
+  })
+);
+
+activetoggle.forEach((element) =>
+  activelabel.addEventListener("click", () => {
+    element.classList.toggle("active");
+    if (element.classList.contains("active")) {
+      window.location.href = "/portfolio/";
     }
   })
 );
