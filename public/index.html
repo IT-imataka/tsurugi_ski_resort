@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>つるぎだけスキーリゾート</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap?family=Shippori+Antique&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://github.com/nicolas-cusan/destyle.css/blob/f99ffd920d91b34b6e28010113395b89243dd721/destyle.css"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css
+    "
+    /> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="backimg mono"></div>
+    <div class="backimg geo"></div>
+    <div class="backimg tri"></div>
+    <div class="backimg que"></div>
+    <div class="backimg pen"></div>
+    <div class="wrap">
+      <header>
+        <nav id="gnav">
+          <h1>
+            <a href="index.html"
+              >TSURUGI
+              <p></p>
+              SkiResort</a
+            >
+          </h1>
+          <div class="mat"></div>
+          <button id="spbtn">
+            <span class="component"></span>
+            <span class="component"></span>
+            <span class="component"></span>
+          </button>
+          <ul>
+            <li><a href="./map.html">マップ</a></li>
+            <li><a href="./facilities.html">施設紹介</a></li>
+            <li><a href="./price.html">料金</a></li>
+            <li><a href="./access.html">アクセス</a></li>
+            <li>
+              <img
+                src="./img/svg/Other/change.svg"
+                alt="グリーンシーズンのアイコン"
+                class="icon"
+              />
+              <div id="label" class="toggle">
+                <button id="button" class="toggle"></button>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="weather">
+          <div class="wrapper">
+            <div class="container">
+              <div class="weather">
+                <!-- ↓ DOM操作で書き換え-->
+                <div id="weatherbox">
+                  <img
+                    src="./img/svg/weather/"
+                    alt="天気情報のアイコン"
+                    class="icon condition situation"
+                  />
+                  <p id="description"></p>
+                </div>
+                <div class="line"></div>
+                <div id="tempbox">
+                  <img
+                    src="./img/svg/weather/thermometer.svg"
+                    alt="温度計のアイコン"
+                    class="icon"
+                  />
+                  <p id="temperature">℃</p>
+                </div>
+              </div>
+              <div id="currentbox">
+                <div id="year-date">
+                  <p id="year"></p>
+                  <p id="day"></p>
+                </div>
+                <div id="month-day">
+                  <p id="month"></p>
+                  <div class="line"></div>
+                  <p id="date"></p>
+                </div>
+              </div>
+            </div>
+            <div class="top_info">
+              <div class="news">
+                <p class="latest">最新情報</p>
+                <div class="text">
+                  <p>
+                    本日の降雪量は0、絶好のウィンタースポーツ日和です。お車でお越しのお客様は入口右手に駐車スペースがあるのでご利用ください。
+                  </p>
+                </div>
+              </div>
+              <div class="snowinfo">
+                <div class="snow">
+                  <p>降水量</p>
+                  <div id="snowfall">
+                    <p id="snow">cm</p>
+                    <img
+                      src="./img/svg/weather/snowman.svg"
+                      alt="雪だるまのアイコン"
+                      class="icon condition"
+                    />
+                  </div>
+                </div>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/rWO9PXZwahM?si=iyZwYulylnvbKX5C&mute=1&autoplay=1"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="Pickup">
+          <div class="back">
+            <h2>PICK UP</h2>
+            <div class="PICKUP_back parallelogram base">
+              <div id="right_top_tri" class="mat"></div>
+              <div class="imgbox">
+                <div class="slide">
+                  <ul class="slidebox">
+                    <li class="slideimg">
+                      <img
+                        src="./img/Top/PICKUP/sauna.png"
+                        alt="サウナの写真"
+                      />
+                      <img
+                        src="./img/Top/PICKUP/drugstore2.png"
+                        alt="併設ドラッグストアの写真"
+                      />
+                      <img
+                        src="./img/Top/PICKUP/buffet.png"
+                        alt="朝食ビュッフェの写真"
+                      />
+                      <img
+                        src="./img/Top/PICKUP/shop.png"
+                        alt="レンタルショップの写真"
+                      />
+                    </li>
+                    <li class="slideimg geo">
+                      <img
+                        src="./img/Top/PICKUP/sauna.png"
+                        alt="サウナの写真"
+                      />
+                      <img
+                        src="./img/Top/PICKUP/drugstore2.png"
+                        alt="併設ドラッグストアの写真"
+                      />
+                      <img
+                        src="./img/Top/PICKUP/buffet.png"
+                        alt="朝食ビュッフェの写真"
+                      />
+                      <img
+                        src="./img/Top/PICKUP/shop.png"
+                        alt="レンタルショップの写真"
+                      />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="left_btm_tri" class="mat">
+                <a href="./facilities.html">施設一覧▶</a>
+                <p>facilities</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="News">
+          <div class="back">
+            <h2>NEWS</h2>
+            <div class="news_back trapezoid base">
+              <div class="news_area accent">
+                <div class="sort">
+                  <div class="index_back">
+                    <p>●カテゴリーから選ぶ</p>
+                  </div>
+                  <button class="tag_area filterbtn active" data-name="all">
+                    すべて
+                  </button>
+                  <button class="tag_area filterbtn" data-name="weather">
+                    天候情報
+                  </button>
+                  <button class="tag_area filterbtn" data-name="news">
+                    お知らせ
+                  </button>
+                  <button class="tag_area filterbtn" data-name="event">
+                    イベント
+                  </button>
+                </div>
+                <div class="contents">
+                  <div class="content topic" data-name="news">
+                    <time datatime="2022-1-31">2022.1.31</time>
+                    <div class="category">
+                      <p>お知らせ</p>
+                    </div>
+                    <p>2月1日(火)のナイター営業は中止のお知らせ</p>
+                  </div>
+                  <div class="content topic" data-name="event">
+                    <time datatime="2022-1-30">2022.1.30</time>
+                    <div class="category">
+                      <p>イベント</p>
+                    </div>
+                    <p>
+                      【期間限定】カニのヨコバイ特殊コース解放！命知らず募集中
+                    </p>
+                  </div>
+                  <div class="content topic" data-name="weather">
+                    <time datatime="2022-1-6">2022.1.6</time>
+                    <div class="category">
+                      <p>天候情報</p>
+                    </div>
+                    <p>開場後2週間の平均積雪60cm 本日もwinter sports日和です</p>
+                  </div>
+                  <div class="content topic" data-name="news">
+                    <time datatime="2021-12-20">2021.12.20</time>
+                    <div class="category">
+                      <p>お知らせ</p>
+                    </div>
+                    <p>2021年12月22日(水)よりつるぎ立山スキーリゾートOPEN</p>
+                  </div>
+                </div>
+              </div>
+              <div id="right_btm_tri" class="mat">
+                <a href="#">
+                  <p>NEWS一覧へ▶</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="Feature">
+          <div class="back long">
+            <h2>FEATURE</h2>
+            <div id="top_left_tri" class="mat"></div>
+            <div class="feature_back trapezoid base">
+              <div class="contents">
+                <h3>つるぎだけスキーリゾートの特徴</h3>
+                <div class="course content">
+                  <div class="text">
+                    <h4>多種多様なコースで日帰りだけじゃ物足りない!</h4>
+                    <p>剣岳山麓で全30コースの多種多様なルートで楽しめる!</p>
+                    <p>
+                      初心者の方も上級者の方も日帰りで満足できるコース設計となっております。
+                    </p>
+                    <p>
+                      思わず明日も滑りたい!そう思ってもらえるように造りました。
+                    </p>
+                    <a href="./map.html">ゲレンデマップ▶</a>
+                  </div>
+                  <img
+                    src="./img/Top/FEATURE/slopeimg.jpg"
+                    alt="ゲレンデの様子を引きで撮った写真"
+                  />
+                </div>
+                <div class="hotel content">
+                  <div class="text">
+                    <h4>日帰りから宿泊への急な変更も大丈夫!</h4>
+                    <p>日帰りのつもりだったけどまだ滑り足りない…</p>
+                    <p>泊まる所がないけどどうしよう…</p>
+                    <p>当スキー場のホテルAPLINAは</p>
+                    <p>
+                      全6000部屋を誇る北陸最大の複合型リゾートホテルとなっております。
+                    </p>
+                    <p>お客様に満足していただくために、最大級のおもてなしで</p>
+                    <p>スタッフ一同心よりお待ちしております。</p>
+                    <a href="./facilities.html">施設紹介へ▶</a>
+                  </div>
+                  <img
+                    src="./img/Top/FEATURE/hotel.jpg"
+                    alt="ホテルの正面写真"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="Information">
+          <div class="back long">
+            <h2>INFORMATION</h2>
+            <div class="info_back re_trapezoid base">
+              <div class="items">
+                <div class="item">
+                  <img
+                    src="./img/Top/information/rentalshop.jpg"
+                    alt="レンタルショップの写真"
+                  />
+                </div>
+                <div class="item">
+                  <img src="./img/Top/information/spa.jpg" alt="温泉の写真" />
+                </div>
+                <div class="item">
+                  <img
+                    src="./img/Top/information/lift.jpg"
+                    alt="リフトの写真"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="./img/Top/information/bus.jpg"
+                    alt="シャトルバスの写真"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="./img/Top/information/green.jpg"
+                    alt="グリーンシーズンの写真"
+                  />
+                </div>
+                <div class="item">
+                  <img
+                    src="./img/Top/information/lounge.jpg"
+                    alt="ラウンジの写真"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer_top">
+          <div class="contact">
+            <h2>
+              <a href="index.html"
+                >TSURUGI
+                <p></p>
+                SkiResort</a
+              >
+            </h2>
+            <div class="content">
+              <a href=""
+                ><img
+                  src="./img/svg/Other/tell.svg"
+                  alt="電話の受話器のアイコン"
+                  class="icon"
+              /></a>
+              <a href="mailto:test@example.com?subject=お問い合わせ"
+                ><img
+                  src="./img/svg/Other/mail.svg"
+                  alt="メールのアイコン"
+                  class="icon"
+              /></a>
+            </div>
+          </div>
+          <address style="font-style: normal">
+            <p>&#12306;930-1406</p>
+            <p>富山県中新川郡上市町</p>
+          </address>
+        </div>
+        <div class="footer_btm">
+          <dl class="site_map">
+            <div class="map">
+              <dt>ホーム</dt>
+              <dd>
+                <a href="">
+                  <img
+                    src="./img/svg/Other/twitter0.svg"
+                    alt="ツイッターのアイコン"
+                    class="icon"
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="./img/svg/Other/instagram.svg"
+                    alt="インスタグラムのアイコン"
+                    class="icon"
+                  />
+                </a>
+              </dd>
+            </div>
+            <div class="map">
+              <dt>施設</dt>
+              <dd>
+                <a href="./facilities.html" class="jump filterbtn">Rest</a>
+              </dd>
+              <dd>
+                <a href="./facilities.html" class="jump filterbtn">Food</a>
+              </dd>
+              <dd>
+                <a href="./facilities.html" class="jump filterbtn">Shop</a>
+              </dd>
+              <dd>
+                <a href="./facilities.html" class="jump filterbtn">Other</a>
+              </dd>
+            </div>
+            <div class="map">
+              <dt>料金</dt>
+              <dd><a href="./price.html">学生の方</a></dd>
+              <dd><a href="./price.html">成人の方</a></dd>
+              <dd><a href="./price.html">お子様</a></dd>
+            </div>
+            <div class="map">
+              <dt>LIVE</dt>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/rWO9PXZwahM?si=iyZwYulylnvbKX5C&mute=1&autoplay=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </dl>
+        </div>
+        <p>
+          <small
+            >&copy;TSURUGI&nbsp;SkiResort&nbsp;All&nbsp;Rights&nbsp;Reserved.</small
+          >
+        </p>
+      </footer>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
