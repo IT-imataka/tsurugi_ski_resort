@@ -22,10 +22,8 @@ toggle.forEach((element) =>
 
 activetoggle.forEach((element) =>
   label.addEventListener("click", () => {
-    element.classList.toggle("active");
-    if (element.classList.contains("active")) {
-      window.location.href = "/portfolio/";
-    }
+    element.classList.remove("active");
+    window.location.href = "/portfolio/";
   })
 );
 
