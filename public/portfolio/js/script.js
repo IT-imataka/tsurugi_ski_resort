@@ -47,23 +47,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (Includewords(description, words)) {
         const iconcloud = document.querySelector(".situation");
-        iconcloud.src = "./img/svg/weather/cloud.svg";
+        iconcloud.src = "portfolio/img/svg/weather/cloud.svg";
       } else if (description.includes("晴")) {
         const iconsun = document.querySelector(".situation");
-        iconsun.src = "./img/svg/weather/sun.svg";
+        iconsun.src = "portfolio/img/svg/weather/sun.svg";
       } else {
         if (description.includes("雨")) {
           const rainfall = data.rain["1h"];
           document.getElementById("snow").innerText = `${rainfall}mm`;
           icon.forEach((condition) => {
-            condition.src = "./img/svg/weather/rain.svg";
+            condition.src = "portfolio/img/svg/weather/rain.svg";
           });
-          icon.src = "./img/svg/weather/rain.svg";
+          icon.src = "portfolio/img/svg/weather/rain.svg";
         } else {
           const snowfall = data.snow["1h"];
           document.getElementById("snow").innerText = `${snowfall}cm`;
           icon.forEach((condition) => {
-            condition.src = "./img/svg/weather/snow.svg";
+            condition.src = "portfolio/img/svg/weather/snow.svg";
           });
         }
       }
