@@ -13,7 +13,7 @@ toggle.forEach((event) =>
     event.classList.toggle("active");
     currentpage = 1;
     if (currentpage === 1) {
-      window.location.href = "portfolio/green.html";
+      window.location.href = "/green.html";
       currentpage = 0;
     } else {
       window.history.back();
