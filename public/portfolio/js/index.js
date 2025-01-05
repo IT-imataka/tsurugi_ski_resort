@@ -22,6 +22,7 @@ toggle.forEach((element) =>
 
 activetoggle.forEach((element) =>
   label.addEventListener("click", () => {
+    console.log(element);
     element.classList.remove("active");
     window.location.href = "/portfolio/";
   })
