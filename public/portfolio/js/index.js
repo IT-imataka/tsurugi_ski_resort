@@ -9,10 +9,10 @@ const label = document.getElementById("label");
 const loc = document.location.pathname;
 console.log(loc);
 
-toggle.forEach((event) =>
+toggle.forEach((element) =>
   label.addEventListener("click", () => {
-    event.classList.toggle("active");
-    if (event.classList.contains("active")) {
+    element.classList.toggle("active");
+    if (element.classList.contains("active")) {
       window.location.href = "/portfolio/green.html";
     } else {
       window.location.href = `${loc}`;
