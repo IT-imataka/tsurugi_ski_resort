@@ -7,8 +7,8 @@
 const toggle = document.querySelectorAll(".toggle");
 const label = document.getElementById("label");
 const loc = document.location.pathname;
-const activelabel = document.getElementById("label");
 const activetoggle = document.getElementById("activetoggle");
+const activelabel = document.querySelectorAll(".activelabel");
 // console.log(loc);
 
 toggle.forEach((element) =>
