@@ -6,6 +6,8 @@
 // ↓　グリーンシーズン切り替え用のトグルボタン
 const toggle = document.querySelectorAll(".toggle");
 const label = document.getElementById("label");
+const loc = document.location.pathname;
+console.log(loc);
 let currentpage = 0;
 
 toggle.forEach((event) =>
@@ -13,10 +15,10 @@ toggle.forEach((event) =>
     event.classList.toggle("active");
     currentpage = 1;
     if (currentpage === 1) {
-      window.location.href = "/green.html";
+      window.location.href = "/portfolio/green.html";
       currentpage = 0;
     } else {
-      window.history.back();
+      // window.location.;
       currentpage = 1;
     }
   })
