@@ -318,7 +318,7 @@ section:first-child {
   justify-content: space-evenly;
 }
 #currentbox {
-  padding: 20px 4%;
+  padding: 40px 4%;
 }
 .weather {
   border-top: none;
