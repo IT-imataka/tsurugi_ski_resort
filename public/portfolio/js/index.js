@@ -20,13 +20,13 @@ toggle.forEach((element) =>
   })
 );
 
-activetoggle.forEach((element) =>
-  label.addEventListener("click", () => {
+label.addEventListener("click", () => {
+  activetoggle.forEach((element) => {
     console.log(element);
     element.classList.remove("active");
     window.location.href = "/portfolio/";
-  })
-);
+  });
+});
 
 // ↓ ハンバーガー
 const spbtn = document.getElementById("spbtn");
