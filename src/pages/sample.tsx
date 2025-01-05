@@ -1,4 +1,4 @@
-import styles from '../styles/globals.css'
+import styles from '../styles/Sample.module.css'
 
 export default function Home(){
   return (

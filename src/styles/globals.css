@@ -14,10 +14,6 @@
   }
 }
 
-.main {
-  border: none;
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
