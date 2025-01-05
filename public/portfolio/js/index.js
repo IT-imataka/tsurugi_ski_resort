@@ -9,7 +9,7 @@ const label = document.getElementById("label");
 
 toggle.forEach((event) =>
   label.addEventListener("click", () => {
-    const loc = document.location.pathname;
+    let loc = document.location.pathname;
     console.log(loc);
     event.classList.toggle("active");
     if (event.classList.contains("active")) {
