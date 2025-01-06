@@ -20,7 +20,7 @@ toggle.forEach((element) =>
   })
 );
 
-label.addEventListener("click", () => {
+activelabel.addEventListener("click", () => {
   activetoggle.forEach((element) => {
     console.log(element);
     element.classList.remove("active");
