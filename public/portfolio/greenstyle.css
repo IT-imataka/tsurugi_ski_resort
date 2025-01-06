@@ -21,7 +21,8 @@ section {
   padding: 20px;
   margin: 20px 0;
 }
-section.green {
+section.green,
+footer.green {
   display: none;
 }
 
