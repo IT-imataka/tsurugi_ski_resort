@@ -1154,5 +1154,8 @@ select {
 }
 
 /* 以下sp */
-/* @media (max-width: 1100px) {
-} */
+@media (max-width: 912px) {
+  #spbtn {
+    display: block;
+  }
+}
