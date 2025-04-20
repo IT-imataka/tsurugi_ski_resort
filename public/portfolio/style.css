@@ -1161,7 +1161,7 @@ select {
     font-size: 14px;
   }
   .backimg {
-    /* background-size: contain; */
+    background-size: contain;
     background-position: initial;
   }
   .backimg.mono,
