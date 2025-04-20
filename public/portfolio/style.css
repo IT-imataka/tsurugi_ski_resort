@@ -1167,7 +1167,7 @@ select {
   .backimg.mono,
   .backimg.geo,
   .backimg.tri {
-    height: auto;
+    height: 100vh;
   }
   .backimg.pen {
     height: auto;
