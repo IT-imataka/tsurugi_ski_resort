@@ -1215,6 +1215,9 @@ select {
   .text {
     padding: 10px;
   }
+  footer {
+    margin-inline: 2.5%;
+  }
 
   .footer_top,
   .footer_btm {
