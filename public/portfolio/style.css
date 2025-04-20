@@ -1161,9 +1161,8 @@ select {
     font-size: 14px;
   }
   .backimg {
-    background-image: url(./img/Top/top_img_sp.jpg);
     background-attachment: scroll;
-    background-size: contain;
+    /* background-size: contain; */
     background-position: initial;
   }
   .backimg.mono,
@@ -1172,13 +1171,16 @@ select {
     height: 100vh;
   }
   .backimg.mono {
-    background-image: url(./img/Top/bord_sp.jpg);
+    background-image: url(./img/Top/top_img_sp.jpg);
   }
   .backimg.geo {
-    background-image: url(./img/Top/light_right-assets_sp.jpg);
+    background-image: url(./img/Top/bord_sp.jpg);
   }
   .backimg.tri {
-    background-image: url(./img/Top/yellow-assets_sp.jpg);
+    background-image: url(./img/Top/light_right-assets_sp.jpg);
+  }
+  .backimg.que {
+    background-image: url(./img/Top/yellow_sp.jpg);
   }
   .backimg.pen {
     height: auto;
