@@ -1175,6 +1175,11 @@ select {
     height: auto;
     margin-inline: 2.5%;
   }
+
+  #Pickup {
+    margin-top: auto;
+  }
+
   .top_info {
     width: 100%;
     padding-inline: 2.5%;
