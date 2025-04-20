@@ -1160,6 +1160,9 @@ select {
   body {
     font-size: 14px;
   }
+  section {
+    margin-top: 25vh;
+  }
   #gnav ul li {
     margin: 10px 0;
   }
@@ -1167,10 +1170,14 @@ select {
     flex-direction: column;
     align-items: center;
   }
-  .container,
-  .top_info {
+  .container {
     width: auto;
     height: auto;
+    margin-inline: 2.5%;
+  }
+  .top_info {
+    width: 100%;
+    padding-inline: 2.5%;
   }
 
   .page_content {
