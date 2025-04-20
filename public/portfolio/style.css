@@ -1167,6 +1167,12 @@ select {
     flex-direction: column;
     align-items: center;
   }
+  .container,
+  .top_info {
+    width: auto;
+    height: auto;
+  }
+
   .page_content {
     padding: 20px;
   }
