@@ -1160,6 +1160,11 @@ select {
   body {
     font-size: 14px;
   }
+  .backimg {
+    background-size: contain;
+    background-position: initial;
+  }
+
   section {
     margin-top: 25vh;
   }
