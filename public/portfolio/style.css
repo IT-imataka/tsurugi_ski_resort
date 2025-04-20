@@ -1154,29 +1154,19 @@ select {
 }
 
 /* 以下sp */
-@media (max-width: 912px) {
-}
 
 /* スマートフォン対応 */
 @media (max-width: 768px) {
   body {
     font-size: 14px;
   }
-
-  header {
-    padding: 10px;
-  }
-
-  #gnav ul {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-  }
-
   #gnav ul li {
     margin: 10px 0;
   }
-
+  #weather .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
   .page_content {
     padding: 20px;
   }
