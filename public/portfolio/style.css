@@ -1161,7 +1161,6 @@ select {
     font-size: 14px;
   }
   .backimg {
-    background-attachment: scroll;
     /* background-size: contain; */
     background-position: initial;
   }
