@@ -1273,4 +1273,7 @@ select {
   .footer_btm {
     padding: 30px;
   }
+  * {
+    outline: 1px solid red; /* 一時的に追加 */
+  }
 }
