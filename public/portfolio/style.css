@@ -1244,6 +1244,9 @@ select {
   .site_map {
     flex-wrap: wrap;
   }
+  .site_map .map:last-child iframe {
+    width: 100%;
+  }
 }
 
 /* タブレット対応 */
