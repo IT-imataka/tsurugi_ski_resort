@@ -1164,6 +1164,15 @@ select {
     background-size: contain;
     background-position: initial;
   }
+  .backimg.mono,
+  .backimg.geo,
+  .backimg.tri {
+    height: auto;
+  }
+  .backimg.pen {
+    height: auto;
+    background-size: cover;
+  }
 
   section {
     margin-top: 25vh;
