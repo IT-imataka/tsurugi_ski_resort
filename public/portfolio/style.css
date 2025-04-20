@@ -1161,6 +1161,8 @@ select {
     font-size: 14px;
   }
   .backimg {
+    background-image: url(./img/Top/topimg_sp.jpg);
+    background-attachment: scroll;
     background-size: contain;
     background-position: initial;
   }
