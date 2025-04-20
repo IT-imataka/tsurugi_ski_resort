@@ -1229,6 +1229,9 @@ select {
     width: 50px;
     height: 50px;
   }
+  .site_map {
+    flex-wrap: wrap;
+  }
 }
 
 /* タブレット対応 */
