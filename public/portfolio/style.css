@@ -1158,4 +1158,7 @@ select {
   #spbtn {
     display: block;
   }
+  #gnav ul {
+    display: none;
+  }
 }
