@@ -1,16 +1,10 @@
 @charset "utf-8";
 
-/* 全体の余白をリセット */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  overflow-x: hidden; /* 横スクロールを防止 */
-}
-
 ul {
   list-style: none;
 }
@@ -1168,21 +1162,63 @@ select {
 @media (max-width: 768px) {
   body {
     font-size: 14px;
-    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  .backimg {
+    background-size: contain;
+    background-position: initial;
+  }
+  .backimg.mono,
+  .backimg.geo,
+  .backimg.tri {
+    height: 100vh;
+  }
+  .backimg.mono {
+    background-image: url(./img/Top/top_img_sp.jpg);
+  }
+  .backimg.geo {
+    background-image: url(./img/Top/bord_sp.jpg);
+  }
+  .backimg.tri {
+    background-image: url(./img/Top/light_right-assets_sp.jpg);
+  }
+  .backimg.que {
+    background-image: url(./img/Top/yellow_sp.jpg);
+  }
+  .backimg.pen {
+    height: auto;
+    background-size: cover;
   }
 
-  header {
-    padding: 10px;
+  section {
+    margin-top: 25vh;
   }
-
-  #gnav ul {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0;
-  }
-
   #gnav ul li {
     margin: 10px 0;
+  }
+  #weather .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    width: auto;
+    height: auto;
+    margin-inline: 2.5%;
+  }
+
+  #Pickup {
+    margin-top: 25vh;
+  }
+
+  .top_info {
+    width: 100%;
+    padding-inline: 2.5%;
+  }
+  .PICKUP_back .slidebox {
+    display: flex;
+    overflow-x: auto;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .page_content {
@@ -1201,6 +1237,9 @@ select {
   .text {
     padding: 10px;
   }
+  /* footer {
+    margin-inline: 2.5%;
+  } */
 
   .footer_top,
   .footer_btm {
@@ -1212,22 +1251,9 @@ select {
     width: 50px;
     height: 50px;
   }
-
-  .container {
-    width: 100%;
-    margin: 0 auto;
-  }
-
   .site_map {
     flex-wrap: wrap;
-    gap: 10px;
   }
-
-  .site_map .map {
-    width: 100%;
-    text-align: center;
-  }
-
   .site_map .map:last-child iframe {
     width: 100%;
   }
@@ -1238,9 +1264,11 @@ select {
   #spbtn {
     display: block;
   }
-
   #gnav ul {
     display: none;
+  }
+  #gnav ul {
+    font-size: 1rem;
   }
 
   .page_content {
@@ -1255,35 +1283,7 @@ select {
   .footer_btm {
     padding: 30px;
   }
-
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .site_map {
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .site_map .map {
-    width: 48%; /* 2列表示 */
-  }
-}
-
-/* デスクトップ対応 */
-@media (min-width: 1025px) {
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .site_map {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .site_map .map {
-    width: 23%; /* 4列表示 */
+  * {
+    outline: 1px solid red; /* 一時的に追加 */
   }
 }
